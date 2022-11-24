@@ -56,7 +56,7 @@
                     <input type="text" name="cognome" placeholder="Cognome"> <span class = "error"> <?php echo $nameErr;?></span>
                 </div><br>
                 <div class="user-box">
-                    <input type="text" name="email" placeholder="Email"> <span class = "error"> <?php echo $nameErr;?></span>
+                    <input type="text" name="email" placeholder="Email"> <span class = "error"> <?php echo $emailErr;?></span>
                 </div><br>
                 <div class="user-box">
                     <input type="password" name="password" placeholder="Password"> <span class = "error"> <?php echo $nameErr;?></span>

@@ -93,7 +93,7 @@
                 if(empty($_POST["indirizzo"])){
                     $addressErr = "Campo Obbligatorio";
                 }else{
-                    $address = test_input($_POST["indirrizo"]);
+                    $address = test_input($_POST["indirizzo"]);
 
                     if (!preg_match("/^[a-zA-Z0-9' ]{2,100}+$/", $address)) {
                         $addressErr = "Indirzzo non valido";
@@ -116,7 +116,7 @@
             checkName($nome,$nomeErr,$_POST["nome"]);
             checkSurname($cogn,$cognErr,$_POST["cognome"]);
             checkEmail($email,$emailErr,$_POST["email"]);
-            checkSurname($pwd,$pwdErr,$_POST["password"]);
+            checkPassword($pwd,$pwdErr,$_POST["password"]);
             checkData($dataErr,$_POST["data"]);
             checkAddress($address,$addressErr,$_POST["indirizzo"]);
          }
